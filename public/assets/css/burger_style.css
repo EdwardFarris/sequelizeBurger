@@ -1,0 +1,114 @@
+body {
+    background-color: lightseagreen;
+}
+
+#burger {
+    display: block;
+    margin: auto;
+    height: 300px;
+    border: solid 2px rgb(255, 145, 0);
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    color: rgb(255, 145, 0);
+    text-shadow: 3px 3px black;
+    padding: 10px;
+    font-size: 50px;
+    margin: 2px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    color: rgb(255, 145, 0);
+    text-shadow: 3px 3px black;
+    padding: 10px;
+    font-size: 25px;
+    margin: 2px;
+}
+
+h5 {
+    
+    font-family: 'Bungee', cursive;
+    color: black;
+    text-shadow: 3px 3px rgb(255, 145, 0);
+    padding: 10px;
+    font-size: 25px;
+    margin: 2px;
+}
+
+/* .container {
+    margin-left: 200px;
+} */
+
+.burgerAvailable {
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 15px;
+    width: 80%;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: rgb(255, 145, 0);
+    border: solid 1px black;
+}
+
+.burgerAvailable:hover {
+    background-color: #81ff94;
+}
+
+.burgerEaten {
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 15px;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 80%;
+    padding: 5px;
+    background-color: #fa735b;
+    border: solid 1px black;
+}
+
+#burgerbox {
+    margin-left: 200px;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+}
+
+.addBurgerButton {
+    font-family: 'Squada One', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 15px;
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(255, 145, 0);
+    border: solid 1px black;
+}
+
+.addBurgerButton:hover {
+    background-color: #81ff94;
+}
+
+
+/* font-family: 'Frijole', cursive;
+font-family: 'Bahiana', cursive; */
+/* font-family: 'Bungee', cursive;
+font-family: 'Squada One', cursive; */

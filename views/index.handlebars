@@ -1,0 +1,44 @@
+<h2>Click on a burger to DEVOUR IT and remove it from the menu!</h2>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h5>Burger Menu:</h5>
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <div>
+              <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+      <div class="col-sm-6">
+        <h5>Devoured Burgers:</h5>
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class='burgerEaten'>
+              <div>
+                {{this.burger_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+
+<h2>Enter a burger name and press the Add Burger Button to add it to the menu!</h2>
+
+<div class="row" id="burgerbox">
+  <div class="col s12">
+    <form action="/burgers" method="POST">
+      <input type="text" id="name" name="burger_name" placeholder="Type Burger Name Here">
+      <button type="submit" class="addBurgerButton">Add Burger Button</button>
+    </form>
+  </div>
+</div>
